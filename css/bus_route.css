@@ -1,0 +1,679 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px "microsoft yahei", Arial;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.lf {
+    float: left;
+}
+
+.rt {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+    text-decoration: none;
+}
+
+/*框架*/
+article, footer, section {
+    border: 1px solid #000;
+}
+
+#top_box, #top_main, #main, #foot_box, #footer {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+#top_box {
+    height: 30px;
+}
+
+#top_main {
+    height: 60px;
+    padding: 35px 0;
+}
+
+/*#nav{*/
+/*height:40px;*/
+/*}*/
+#footer {
+    height: 180px;
+}
+
+#top {
+    width: 100%;
+    height: 30px;
+    background: #f5f5f5;
+    line-height: 30px;
+}
+
+.box1 {
+    color: #808080;
+    margin-right: 20px;
+}
+
+.box2 {
+    color: #ff4747;
+    text-decoration: none;
+}
+
+.locate {
+    margin-left: 5px;
+    color: #808080;
+}
+
+#top_box > div > ul > li {
+    color: #808080;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#top_box ul li b {
+    border-left: 1px solid #ddd;
+    padding-right: 5px;
+}
+
+.register a, .ma_login a {
+    color: #808080;
+    text-decoration: none;
+}
+
+#search_box {
+    width: 510px;
+    padding-left: 150px;
+    padding-right: 20px;
+    position: relative;
+}
+
+div.search {
+    width: 500px;
+    height: 30px;
+    margin-bottom: 5px;
+    background-color: #0083ed;
+    border: 3px solid #0083ed;
+}
+
+#txtSearch {
+    width: 405px;
+    height: 20px;
+    padding: 5px;
+    background-color: #fff;
+    line-height: 20px;
+}
+
+#bthSearch {
+    width: 81px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #0083ed;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*热门搜索*/
+div.hot_words {
+    height: 18px;
+    width: 510px;
+    overflow: hidden;
+}
+
+div.hot_words span {
+    font-size: 14px;
+    color: #808080;
+    margin-right: 5px;
+}
+
+div.hot_words a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #808080;
+    margin-right: 5px;
+}
+
+div.hot_words a:hover {
+    color: #0083ed;
+    font-weight: bold;
+}
+
+.huo {
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    padding-right: 24px;
+}
+
+/*下拉菜单-发布信息*/
+.select {
+    position: relative;
+    float: left;
+}
+
+.select ul li a {
+    font-size: 16px;
+}
+
+.select dt {
+    height: 35px;
+    color: #fff;
+    display: inline-block;
+    background: #0083ed  no-repeat 145px center;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 10px;
+    cursor: pointer;
+    width: 140px;
+    padding-right: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+
+/*.select dt:hover,.select dt.cur{*/
+/*border: 1px solid #0083ed;*/
+/*}*/
+.select dd {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background: #008dff;
+    display: none;
+}
+
+.select dd ul {
+    padding: 4px;
+    width: 154px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.select dd ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    display: block;
+    padding: 0 8px;
+}
+
+.select dd ul li a:hover {
+    background: #0083ed;
+}
+
+/*下拉菜单-发布信息-结束*/
+/*主导航*/
+.menuScroll {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    /*height: 505px;*/
+    margin: 0 auto;
+}
+
+.indexCont {
+    width: 1200px;
+    margin: 0 auto;
+    height: 42px;
+}
+
+.warpper {
+    width: 100%;
+    margin: 10px auto 0 auto;
+    height: 42px;
+}
+
+.menu {
+    width: 1014px;
+    padding-left: 193px;
+    border-bottom: 2px solid #0083ed;
+    overflow: hidden;
+    float: left;
+}
+
+.menu .leftMenu li {
+    float: left;
+}
+
+.menu .leftMenu li a {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    background: #fff;
+    color: #666;
+    font-size: 15px;
+    font-family: "Microsoft Yahei", Arial;
+    padding: 0;
+}
+
+.menu .leftMenu li a:hover {
+    color: #fff;
+    background-color: #0083ed;
+}
+
+.menu .leftMenu li ul {
+    z-index: 100;
+    position: absolute;
+    display: none;
+}
+
+.menu .leftMenu li ul li {
+    float: none;
+}
+
+.menu .leftMenu li ul li a {
+    border-right: none;
+    background: #f5f5f5;
+}
+
+.menu .leftMenu li:hover ul {
+    display: block;
+}
+
+#nav {
+    width: 190px;
+    position: relative;
+    top: -41px;
+    left: 0;
+    *position: absolute;
+    *margin-top: -41px;
+    background: #636363;
+    z-index: 2;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*左侧媒体分类*/
+#nav .mod_cate_hd {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-indent: 7px;
+    box-shadow: 2px -1px 3px rgba(55, 55, 55, 0.5);
+    background-color: #0083ed;
+    border-bottom: 1px #0083ed solid;
+    font-family: "Microsoft Yahei";
+}
+
+#nav .mod_cate, #nav .mod_cate2 {
+    height: 20px;
+    /*border-top: 1px #658153 solid;*/
+    /*border-bottom: 1px #4DA714 solid;*/
+    padding: 9px 10px 10px 10px;
+}
+
+#nav .mod_cate h2, #nav .mod_cate2 h2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+}
+
+#nav .mod_cate h2 a, #nav .mod_cate2 h2 a {
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+#nav .mod_cate_r {
+    line-height: 24px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#nav .mod_cate_r a {
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+#nav .mod_cate2 {
+    background: none;
+}
+
+#nav .mod_cate2 a.yel {
+    color: #fee602;
+}
+
+#nav .mod_subcate {
+    display: none;
+    width: 400px;
+    /* height: 388px; */
+    border: 2px #0083ed solid;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 41px;
+    z-index: -1;
+    left: 188px;
+    overflow: hidden;
+}
+
+#nav .mod_subcate_main {
+    width: 400px;
+    padding: 0px 20px 1000px 20px;
+    margin-bottom: -1000px;
+    border-right: 1px #ddd solid;
+    float: left;
+}
+
+#nav .mod_subcate_line {
+    width: 100%;
+    height: 1px;
+    clear: both;
+    font-size: 0px;
+    margin-bottom: 5px;
+    border-top: 5px #fff solid;
+    /*border-bottom:1px #dadada dotted;*/
+    overflow: hidden;
+    display: block;
+}
+
+#nav .mod_subcate_main ul li {
+    font-size: 14px;
+    color: #0083ed;
+    padding: 7px 0;
+    width: 360px;
+    /*border-bottom:1px #e5e5e5 solid;*/
+    overflow: hidden;
+    border-bottom: 1px solid #0083ed;
+}
+
+#nav .mod_subcate_main ul a {
+    color: #646363;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding-right: 14px;
+}
+
+#nav .mod_subcate_main ul a:hover {
+    color: #0083ed;
+}
+
+#nav .arrow_dot {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    font-size: 0px;
+    margin: 6px 0 0 5px;
+    border: 4px transparent dashed;
+    border-left: 4px #FFFFFF solid;
+}
+
+#nav .on {
+    padding: 8px 10px 9px 8px;
+    border-top: 2px #0083ed solid;
+    border-bottom: 2px #0083ed solid;
+    margin-left: 2px;
+    background: #FFFFFF;
+}
+
+#nav .on h2 a {
+    color: #333333;
+}
+
+#nav .on .mod_subcate {
+    display: block !important; /* !important 强制显示，否则会闪烁*/
+}
+
+#nav .on .mod_cate_r a {
+    color: #666666;
+}
+
+#nav .on a.hot_sub {
+    color: #FFFFFF;
+}
+
+.tenScrollCont {
+    float: left;
+    width: 1211px;
+    position: absolute;
+    top: 64px;
+}
+
+/*首页标签*/
+.pag {
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    clear: both;
+    width: 1211px;
+    /*margin: 0 auto;*/
+    margin-bottom: 20px;
+}
+
+.pag ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pag li {
+    font-size: 14px;
+    margin-right: 8px;
+    color: #b3b3b3;
+    float: left;
+}
+
+.pag li a {
+    color: #b3b3b3;
+}
+.route{
+    width: 1200px;
+    margin: 0 auto 20px;
+    border: 1px solid #dcdcdc;
+}
+.route_tit{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 8px 0;
+    width: 1200px;
+    background-color: #fafafa;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+.route_detail{
+    width: 1200px;
+    padding: 4px;
+    line-height: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.route_detail:last-child{
+    border-bottom: none;
+}
+.route_detail td{
+    border-right: 1px solid #dcdcdc;
+    width: 138px;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #333;
+}
+.route_detail td:last-child{
+    border-right:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部样式*/
+.footer {
+    width: 100%;
+    height: 295px;
+    background-color: #424f61;
+}
+
+.foot {
+    padding-top: 46px;
+    padding-bottom: 20px;
+    width: 1211px;
+    margin: 0 auto;
+}
+
+.foot1, .foot2 {
+    float: left;
+    width: 390px;
+    text-align: center;
+    border-right: 1px solid #687281;
+}
+
+p.service, p.mobiles, p.zip_code {
+    font-size: 14px;
+    color: #fff;
+}
+
+.line {
+    width: 1211px;
+    margin: 0 auto;
+    border: 1px solid #687281;
+    margin-top: 150px;
+}
+
+.foot3 {
+    width: 390px;
+    float: right;
+    text-align: center;
+}
+
+.foot3 .public {
+    font-size: 14px;
+    color: #fff;
+}
+
+.Popup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    padding-bottom: 2px;
+}
+
+.PopupHeader {
+    background: url(../images/hd-bg.png) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #CCCCCC;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 18px 18px 14px;
+}
+
+.modal_close {
+    background: url(../images/modal_close.png) repeat scroll 0 0 transparent;
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 14px;
+    z-index: 2;
+}
+
+.Text {
+    padding-left: 8px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+    height: 24px;
+    font-size: 12px;
+}
+
+.btn1 {
+    background: none repeat scroll 0 0 #3F9D4A;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 12px;
+    overflow: visible;
+    padding: 7px 10px;
+    width: auto;
+}
+
+.btn1:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*返回顶部*/
+.back_to_top {
+	background-color: #fff;
+    width: 48px;
+    height: 148px;
+    position: fixed;
+    right: 12px;
+    top: 453px;
+    border: 1px solid #dcdcdc;
+}
+
+.back_to_top .arrow1 {
+    display: block;
+    margin: 7px 11px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.back_to_top .kf {
+    padding-bottom: 7px;
+    color: #0083ed;
+}
+
+.back_to_top .arrow {
+    margin: 20px 15px;
+}
